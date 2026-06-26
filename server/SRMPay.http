@@ -1,0 +1,5 @@
+@SRMPay_HostAddress = http://localhost:5258
+
+GET {{SRMPay_HostAddress}}/
+
+###
