@@ -18,6 +18,6 @@ public class Product
     public string? ImageUrl { get; set; }
 
     public Guid VendorId { get; set; }
-    
-    public required Vendor Vendor { get; set; }
+
+    public Vendor Vendor { get; set; } = null!;
 }

@@ -23,9 +23,9 @@ public class Order
 
     public Guid StudentId { get; set; }
 
-    public required Student Student { get; set; }
+    public Student Student { get; set; } = null!;
 
     public Guid VendorId { get; set; }
     
-    public required Vendor Vendor { get; set; }
+    public Vendor Vendor { get; set; } = null!;
 }
