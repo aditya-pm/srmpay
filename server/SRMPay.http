@@ -3,3 +3,5 @@
 GET {{SRMPay_HostAddress}}/
 
 ###
+GET {{SRMPay_HostAddress}}/vendors/
+
