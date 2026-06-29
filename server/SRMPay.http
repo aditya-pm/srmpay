@@ -5,3 +5,5 @@ GET {{SRMPay_HostAddress}}/
 ###
 GET {{SRMPay_HostAddress}}/vendors/
 
+###
+GET {{SRMPay_HostAddress}}/vendors/435c33a5-1f3e-4435-b9f3-7c9f7a0475ea

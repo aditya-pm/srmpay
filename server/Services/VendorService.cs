@@ -22,4 +22,20 @@ public class VendorService(SRMPayContext db)
             ))
             .ToListAsync();
     }
+
+    public async Task<VendorResponse?> GetByIdAsync(Guid id)
+    {
+        return await _db.Vendors
+            .Where(v => v.Id == id)
+            .Select(v => new VendorResponse(
+                v.Id,
+                v.Name,
+                v.Type,
+                v.Description,
+                v.Location,
+                v.OperatingHours,
+                v.IsQueueEnabled
+            ))
+            .FirstOrDefaultAsync();
+    }
 }
