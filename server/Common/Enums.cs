@@ -1,15 +1,26 @@
 namespace SRMPay.Enums;
 
+public enum VendorType
+{
+    Food,
+    Beverages,
+    Stationery,
+    Printing,
+    Pharmacy,
+    Merchandise,
+    Services,
+    Other
+}
+
 public enum OrderSource
 {
-    Walkin,
+    WalkIn,
     Online
 }
 
 public enum OrderStatus
 {
-    Pending,
-    Accepted,
+    AwaitingAcceptance,
     Preparing,
     Ready,
     Collected,
@@ -28,14 +39,14 @@ public enum ProductType
 
 public enum ComplaintStatus
 {
-    Issued,
+    Open,
     UnderReview,
     Closed
 }
 
 public enum PaymentMethod
 {
-    Offline,
+    Cash,
     Online
 }
 

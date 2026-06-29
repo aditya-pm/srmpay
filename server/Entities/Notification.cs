@@ -1,0 +1,22 @@
+namespace SRMPay.Entities;
+
+public class Notification
+{
+    public Guid Id { get; set; }
+
+    public required string Title { get; set; }
+
+    public required string Message { get; set; }
+
+    public bool IsRead { get; set; }
+
+    public required DateTime CreatedAt { get; set; }
+
+    public Guid? RelatedOrderId { get; set; }
+
+    public Order? RelatedOrder { get; set; }
+
+    public Guid StudentId { get; set; }
+    
+    public required Student Student { get; set; }
+}
