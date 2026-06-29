@@ -24,11 +24,11 @@ public class Vendor
 
     public bool IsQueueEnabled { get; set; }
 
-    public List<Product> Products { get; set; } = [];
+    public ICollection<Product> Products { get; set; } = [];
 
     public Queue? Queue { get; set; }
 
-    public List<Order> Orders { get; set; } = [];
+    public ICollection<Order> Orders { get; set; } = [];
     
-    public List<Settlement> Settlements { get; set; } = [];
+    public ICollection<Settlement> Settlements { get; set; } = [];
 }

@@ -12,9 +12,9 @@ public class Student
 
     public required string PasswordHash { get; set; }
 
-    public List<Order> Orders { get; set; } = [];
+    public ICollection<Order> Orders { get; set; } = [];
 
-    public List<Notification> Notifications { get; set; } = [];
+    public ICollection<Notification> Notifications { get; set; } = [];
     
-    public List<Complaint> Complaints { get; set; } = [];
+    public ICollection<Complaint> Complaints { get; set; } = [];
 }

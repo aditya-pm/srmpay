@@ -13,7 +13,7 @@ public class Order
 
     public QueueEntry? QueueEntry { get; set; }
 
-    public List<OrderItem> OrderItems { get; set; } = [];
+    public ICollection<OrderItem> OrderItems { get; set; } = [];
 
     public required OrderSource Source { get; set; }
 
