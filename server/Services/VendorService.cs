@@ -6,11 +6,9 @@ namespace SRMPay.Services;
 
 public class VendorService(SRMPayContext db)
 {
-    private readonly SRMPayContext _db = db;
-
     public async Task<IReadOnlyList<VendorResponse>> GetAllAsync()
     {
-        return await _db.Vendors
+        return await db.Vendors
             .Select(v => new VendorResponse(
                 v.Id,
                 v.Name,
@@ -25,7 +23,7 @@ public class VendorService(SRMPayContext db)
 
     public async Task<VendorResponse?> GetByIdAsync(Guid id)
     {
-        return await _db.Vendors
+        return await db.Vendors
             .Where(v => v.Id == id)
             .Select(v => new VendorResponse(
                 v.Id,
